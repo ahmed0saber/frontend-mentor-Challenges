@@ -1,0 +1,120 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+}
+main{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+#container{
+    margin: auto;
+    width: 96%;
+    max-width: 1000px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 8px;
+}
+#image{
+    background: hsl(277, 64%, 61%) url("./image-header-desktop.jpg") no-repeat;
+    background-size: cover;
+    height: 330px;
+    width: 50%;
+    float: right;
+    margin-left: 30px;
+    border-radius: 0px 8px 8px 0px;
+    position: relative;
+}
+#image::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(112, 0, 182, 0.5);
+    border-radius: 0px 8px 8px 0px;
+}
+#padding-here{
+    padding: 40px;
+}
+h1{
+    font-size: 36px;
+    font-family: sans-serif;
+}
+span{
+    color: hsl(277, 64%, 61%);
+}
+#padding-here section p{
+    font-size: 17px;
+    font-family: sans-serif;
+    padding: 12px 0px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+}
+#stats div{
+    width: calc((93% / 6) - 5px);
+    display: inline-block;
+    text-align: left;
+}
+#stats div p{
+    padding: 2px;
+}
+#stats div .numbers{
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+}
+#stats div .topics{
+    font-size: 12px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+@media screen and (max-width: 940px) {
+    #image {
+        float: none;
+        margin-left: 0px;
+        width: 100%;
+        border-radius: 8px 8px 0px 0px;
+    }
+    #image::after{
+        border-radius: 8px 8px 0px 0px;
+    }
+    #stats div{
+        width: calc((100% / 3) - 5px);
+    }
+    #padding-here section p{
+        padding: 20px 0px;
+    }
+    #stats div p{
+        padding: 5px;
+    }
+    #stats div .numbers{
+        font-size: 24px;
+    }
+    #stats div .topics{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 700px) {
+    *{
+        text-align: center;
+    }
+    #stats div{
+        width: fit-content;
+        margin: 25px auto;
+        display: block;
+    }
+    #stats div .numbers{
+        font-size: 32px;
+    }
+    #stats div .topics{
+        font-size: 18px;
+    }
+}
