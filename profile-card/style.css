@@ -76,20 +76,18 @@ hr{
     color: hsl(227, 10%, 46%);
 }
 #top img{
-    height: 100vh;
-    width: 100vh;
-    background-size: 100vh 100vh;
+    width: 40%;
+    height: auto;
     position: absolute;
-    top: -35vh;
-    left: -10vh;
+    top: 5%;
+    left: 5%;
     z-index: -1;
 }
 #bottom img{
-    height: 100vh;
-    width: 100vh;
-    background-size: 100vh 100vh;
+    width: 25%;
+    height: auto;
     position: absolute;
-    bottom: 0vh;
-    right: 0vh;
+    bottom: 5%;
+    right: 5%;
     z-index: -1;
 }
