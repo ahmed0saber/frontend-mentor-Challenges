@@ -1,0 +1,95 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(185, 75%, 39%);
+}
+main{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+#card{
+    margin: auto;
+    width: 94%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: -2px 2px 12px 4px hsl(229, 23%, 23%, 50%);
+}
+#cover img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0px 0px;
+}
+#image img{
+    width: 120px;
+    height: 120px;
+    margin: -70px 0px 10px calc(50% - 65px);
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+#info{
+    text-align: center;
+}
+#username{
+    font-size: 24px;
+    font-weight: bold;
+    color: hsl(229, 23%, 23%);
+}
+#age{
+    color: hsl(227, 10%, 46%);
+    font-size: 22px;
+    font-weight: normal;
+}
+#country{
+    font-size: 18px;
+    color: hsl(227, 10%, 46%);
+}
+hr{
+    border: 1px solid #000, none, none, none;
+    opacity: 0.6;
+    width: 80%;
+    margin: 25px 10% 25px 10%;
+}
+#data{
+    margin-bottom: 35px;
+}
+#data .stats{
+    width: 32%;
+    display: inline-block;
+    text-align: center;
+    margin: 0px calc(1% / 6);
+}
+#data .stats .number{
+    font-size: 22px;
+    font-weight: bold;
+    color: hsl(229, 23%, 23%);
+}
+#data .stats .topic{
+    font-size: 18px;
+    color: hsl(227, 10%, 46%);
+}
+#top img{
+    height: 100vh;
+    width: 100vh;
+    background-size: 100vh 100vh;
+    position: absolute;
+    top: -35vh;
+    left: -10vh;
+    z-index: -1;
+}
+#bottom img{
+    height: 100vh;
+    width: 100vh;
+    background-size: 100vh 100vh;
+    position: absolute;
+    bottom: 0vh;
+    right: 0vh;
+    z-index: -1;
+}
