@@ -1,1 +1,1 @@
-https://ahmed0saber.github.io/frontend-mentor-Tasks/NFT-preview-card/
+https://ahmed0saber.github.io/frontend-mentor-Challenges/NFT-preview-card/
