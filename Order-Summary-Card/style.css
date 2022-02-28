@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Red Hat Display", sans-serif;
+}
+body{
+    min-height: calc(100vh - 20px);
+    background: hsl(225, 100%, 94%) url('./images/pattern-background-desktop.svg') right top no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+}
+main{
+    width: 90%;
+    max-width: 380px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+img.cover{
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+    -webkit-border-radius: 16px 16px 0 0;
+    -moz-border-radius: 16px 16px 0 0;
+    -ms-border-radius: 16px 16px 0 0;
+    -o-border-radius: 16px 16px 0 0;
+    margin: 0 0 10px 0;
+}
+h2{
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+    margin: 14px 0;
+}
+p{
+    padding: 4px 20px;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: hsl(225, 100%, 98%);
+    width: fit-content;
+    margin: 18px auto;
+    padding: 16px 12px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+section img{
+    margin: 0 18px 0 4px;
+}
+section div{
+    display: inline-block;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+section div span:first-of-type{
+    font-weight: bold;
+    color: hsl(223, 47%, 23%);
+}
+section div span:last-of-type{
+    color: hsl(224, 23%, 55%);
+}
+a.change{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 8px 0 48px;
+    color: hsl(245, 75%, 52%);
+    font-size: 14px;
+    font-weight: bold;
+}
+a.change:hover{
+    opacity: 0.6;
+    text-decoration: none;
+}
+div.btn-group{
+    width: 86%;
+    margin: 0 auto;
+    padding: 6px 0;
+}
+div.btn-group button{
+    cursor: pointer;
+}
+div.btn-group button:first-of-type{
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0px 16px 10px 2px hsl(225, 100%, 94%);
+}
+div.btn-group button:first-of-type:hover{
+    opacity: 0.6;
+}
+div.btn-group button:last-of-type{
+    background: transparent;
+    color: hsl(224, 23%, 55%);
+    border: none;
+    padding: 14px;
+    width: 100%;
+    font-weight: bold;
+    margin: 8px 0;
+}
+div.btn-group button:last-of-type:hover{
+    color: hsl(223, 47%, 23%);
+}
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+}
+@media screen and (max-width: 700px) {
+    body {
+        background: hsl(225, 100%, 94%) url('./images/pattern-background-mobile.svg') right top no-repeat;
+        background-size: cover;
+    }
+}
